@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <meta charset="UTF-8">
+  <title>Your Ticket</title>
+  <link rel="stylesheet" href="css/style.css" type="text/css">
+ </head>
+ <body>
+   <div id="page">
+   <div id = "ticket">
+     <div id="titletix"><h1>Your eTicket</h1></div>
+   <div id = "scan">
+     <img src="images/qrcode.png"/>
+     </div>
+   <br><br>
+     <p id="depart"><%= @info.depart.upcase %></p><p id="arrow"> &#8594;</p> <p id="arrive"><%= @info.arrive.upcase %></p>
+     <p id="way"><%=@info.oneway? %></p>
+     <br>
+     <hr>
+     <div id="line2"><p id="tixname"><%=@info.name.upcase %></p>|<p id="train_num">TRAIN NUM <%=@info.train_num %></p></div>
+     <hr>
+     <div id="line3">PURCHASED: <%=@time.month %>/<%=@time.day %>/<%=@time.year %></div>
+   </div>
+   </div>
+ </body>
+</html>

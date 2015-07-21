@@ -1,0 +1,24 @@
+<!-- this is where the homepage goes, using HTML -->
+<!DOCTYPE html>
+<html>
+ <head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <link rel="stylesheet" href="css/style.css" type="text/css">
+ </head>
+ <body>
+   <div id="page">
+ 	<h1 id="title">Train Ticket Generator</h1>
+     <div id="inputpage">
+ 	<form action="/display" method="get">
+    <br><div class="line"><label for="dep">Departure Station:<div class="box"><input id="dep" type="text" name="depart" placeholder="departure" maxlength="3"></div></label>
+		<div class="line"><label for="arr">Arrival Station:<div class="box"><input id="arr" type="text" name="arrive" placeholder="arrive"></div></label></div>
+    <div class="line"><label for="name">Full Name:<div class="box"><input id="name" type="text" name="name" placeholder="first&last name"></div></label></div>
+    <div class="line"><label for="oneway">One Way?  YES<input id ="oneway" name="oneway" type="checkbox"></div>
+		<br>
+		<input type="submit" value="Submit">
+	</form>
+     </div>
+   </div>
+ </body>
+</html>
